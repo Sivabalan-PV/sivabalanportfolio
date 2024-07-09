@@ -1,0 +1,86 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh- 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.workstitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.WorkDesc{
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 45rem;
+}
+.worksImgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    flex-wrap: wrap;
+}
+.worksImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+    border-radius: 2.5rem;
+}
+.workBtn{
+    border: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    background: white;
+    font-size: 1rem;
+    margin: 3rem 0;
+}
+.wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 330px;
+    position:relative;
+    
+}
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(198, 165, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    border-radius: 2.5rem;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity:1;
+}
+.content>h1{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.content>p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+@media screen and (max-width:645px) {
+    .worksImg{
+        height: 50vw;
+    }
+    
+}
